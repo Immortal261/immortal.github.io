@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="A little about me, my personality, university life, interests and everyday experiences.">
+
+    <title>About Me | My World</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0b0b0b;
+            color: #f5f5f5;
+            line-height: 1.7;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 20px 7%;
+
+            background: rgba(10, 10, 10, 0.75);
+            backdrop-filter: blur(15px);
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            color: #aaa;
+            text-decoration: none;
+            margin-left: 30px;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        .article {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 150px 25px 80px;
+        }
+
+        .back {
+            display: inline-block;
+            margin-bottom: 35px;
+
+            color: #aaa;
+            text-decoration: none;
+            font-size: 14px;
+
+            transition: 0.3s;
+        }
+
+        .back:hover {
+            color: white;
+        }
+
+        .label {
+            color: #777;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 12px;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: clamp(42px, 7vw, 75px);
+            line-height: 1;
+            margin-bottom: 25px;
+        }
+
+        .intro {
+            font-size: 20px;
+            color: #aaa;
+            max-width: 700px;
+            margin-bottom: 45px;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 480px;
+
+            background-image:
+                url("https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1400&q=85");
+
+            background-size: cover;
+            background-position: center;
+
+            border-radius: 18px;
+            margin-bottom: 55px;
+        }
+
+        h2 {
+            font-size: 32px;
+            margin: 50px 0 18px;
+        }
+
+        h3 {
+            font-size: 22px;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #b8b8b8;
+            margin-bottom: 18px;
+            font-size: 17px;
+        }
+
+        ul {
+            margin: 20px 0 30px 25px;
+            color: #b8b8b8;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .quote {
+            margin: 45px 0;
+            padding: 30px;
+
+            border-left: 3px solid white;
+            background: #141414;
+
+            font-size: 22px;
+            color: #ddd;
+            border-radius: 0 12px 12px 0;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-top: 45px;
+
+            padding: 14px 24px;
+
+            background: white;
+            color: black;
+
+            text-decoration: none;
+            font-weight: bold;
+
+            border-radius: 30px;
+            transition: 0.3s;
+        }
+
+        .back-button:hover {
+            transform: translateY(-3px);
+            background: #ddd;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #555;
+            border-top: 1px solid #1c1c1c;
+        }
+
+        @media (max-width: 700px) {
+
+            header {
+                padding: 18px 5%;
+            }
+
+            nav a {
+                margin-left: 12px;
+                font-size: 12px;
+            }
+
+            .article {
+                padding: 125px 20px 60px;
+            }
+
+            .hero-image {
+                height: 300px;
+            }
+
+            .intro {
+                font-size: 18px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">My World</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="post1.html">Motorcycles</a>
+        <a href="post3.html">Traveling</a>
+    </nav>
+</header>
+
+
+<main class="article">
+
+    <a class="back" href="index.html">← Back to My World</a>
+
+    <div class="label">About Me</div>
+
+    <h1>A Little About Me.</h1>
+
+    <p class="intro">
+        I am a university student who enjoys discovering new things,
+        meeting people, travelling and collecting experiences.
+        This page is a small introduction to who I am outside of university.
+    </p>
+
+    <div class="hero-image"></div>
+
+
+    <h2>Who am I?</h2>
+
+    <p>
+        It is always difficult to describe yourself in a few sentences.
+        People are much more complicated than a list of interests or hobbies.
+        Still, I think my personality can be described by curiosity and the
+        desire to experience something new.
+    </p>
+
+    <p>
+        I do not like staying in one place for too long. I enjoy changing
+        my environment, discovering new places and learning from different
+        experiences. Sometimes this can be something big, like travelling
+        to another country. Other times it can be something simple, like
+        discovering a new road on a motorcycle.
+    </p>
+
+    <div class="quote">
+        "The best memories usually come from experiences you did not plan."
+    </div>
+
+
+    <h2>University Life</h2>
+
+    <p>
+        University is an important part of my everyday life. It is not only
+        about lectures, assignments and exams. It is also a period when you
+        learn how to manage your time, communicate with different people and
+        make your own decisions.
+    </p>
+
+    <p>
+        Balancing university with personal interests can sometimes be
+        difficult. There are days when I have a lot of things to do, and
+        there are also days when I simply want to take a break and do
+        something I enjoy.
+    </p>
+
+    <p>
+        I think this balance is important because life should not consist
+        only of studying or working. Personal interests and experiences
+        make everyday life more interesting.
+    </p>
+
+
+    <h2>Things I Enjoy</h2>
+
+    <p>
+        There are several things that usually make my free time more
+        interesting:
+    </p>
+
+    <ul>
+        <li>Riding motorcycles and exploring new roads.</li>
+        <li>Travelling and discovering new places.</li>
+        <li>Spending time with friends.</li>
+        <li>Listening to music.</li>
+        <li>Learning something new when I become interested in a topic.</li>
+        <li>Trying new experiences instead of doing the same thing every day.</li>
+    </ul>
+
+
+    <h2>My Personality</h2>
+
+    <p>
+        I would describe myself as curious and independent. When something
+        catches my attention, I usually want to understand it better and
+        try it myself.
+    </p>
+
+    <p>
+        At the same time, I appreciate simple things. A good conversation,
+        a late evening ride, a new place or a spontaneous plan can easily
+        become one of my favourite memories.
+    </p>
+
+    <p>
+        I also think that people change a lot over time. Because of that,
+        this website is not meant to be a perfect description of me.
+        It is simply a snapshot of my life and the things I currently care
+        about.
+    </p>
+
+
+    <h2>Why I Created This Blog</h2>
+
+    <p>
+        I created this website as a personal space where I can collect my
+        interests and experiences. Instead of keeping everything only in
+        my phone or in my memory, I wanted to have a small place on the
+        internet that represents my current life.
+    </p>
+
+    <p>
+        The blog is mainly about three things: motorcycles, myself and
+        travelling. These topics are different, but together they describe
+        a big part of how I spend my time and what I find interesting.
+    </p>
+
+    <a class="back-button" href="index.html">
+        ← Back to Home
+    </a>
+
+</main>
+
+
+<footer>
+    <p>© 2026 My World</p>
+    <p>Motorcycles · About Me · Traveling</p>
+</footer>
+
+</body>
+</html>
